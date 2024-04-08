@@ -28,9 +28,22 @@ public class Usuario {
 
     private String password;
 
+        public Usuario(){
+            
+        }
+
     public Usuario(Long id_usuario, String nombre_usuario, String apellido_usuario, String tipo_usuario, String email, String password) {
         super();
         this.id_usuario = id_usuario;
+        this.nombre_usuario = nombre_usuario;
+        this.apellido_usuario = apellido_usuario;
+        this.tipo_usuario = tipo_usuario;
+        this.Email = email;
+        this.password = password;
+    }
+
+    public Usuario(String nombre_usuario, String apellido_usuario, String tipo_usuario, String email, String password) {
+        super();
         this.nombre_usuario = nombre_usuario;
         this.apellido_usuario = apellido_usuario;
         this.tipo_usuario = tipo_usuario;
